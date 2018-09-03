@@ -1,0 +1,49 @@
+*, 
+::after,::before,
+:after,:before{
+    box-sizing: border-box;
+    margin: 0rem;
+}
+:root {
+  --color-principal: #06c;
+  --bg-header: white;
+  --titulo-h1: 2.5rem;
+  --titulo-h2: 1.5rem;
+  --parrafo: 1rem;
+}
+body{
+  background-color: beige;
+  height: 5000px;
+}
+header{
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  background: var(--bg-header);
+  top: 0;
+}
+
+h1 {
+  margin: var(--gutter);
+  color: var(--color-principal);
+  font-size: var(--titulo-h1)
+}
+section{
+  margin: 5rem 2rem;
+}
+@media (min-width: 600px) {
+  :root {
+    --bg-header: black;
+    --color-principal: red;
+    --titulo-h1: 4rem;
+  }
+  header{
+    height: 5rem;
+  }
+} 
+@media (min-width: 940px){
+  :root{
+    --bg-header: blue; 
+    --color-principal: yellow;
+  }
+}
