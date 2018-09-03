@@ -1,7 +1,15 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --bg-body: rgba(255, 99, 71, 0.2);
+}
 body{
-    margin: 0;
+    margin: 0 3rem;
     padding: 0;
+    background: var(--bg-body);
+
+}
+div{
+    margin: 1rem;
 }
