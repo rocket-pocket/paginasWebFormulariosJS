@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" type="module"></script>
 </head>
 <body>
@@ -40,33 +39,44 @@
             <div class="option-group">
                 <legend>Selecciona un turno</legend>
                 <input type="radio" name="turno" id="mañana" value="01">
-                <label for="mañana">mañana</label>
+                <label for="mañana">Mañana</label>
                 <input type="radio" name="turno" id="tarde" value="02">
-                <label for="tarde">tarde</label>
+                <label for="tarde">Tarde</label>
                 <input type="radio" name="turno" id="noche" value="03">
-                <label for="noche">noche</label>
+                <label for="noche">Noche</label>
             </div>
-            <!-- los radio button tienen que tener mismo name, diferente id para que se enteren de qu solo podemos elejir una opcion -->
             <div class="control-group">
                 <label for="curso">Curso</label>
                 <select name="curso" id="curso">
-                    <optgroup label="programacion">
-                        <option value="pweb">Paginas Web</option>
-                        <option value="dback">Desarrollo Back</option>
-                        <option value="dfront">Desarrollo front</option>
+                    <optgroup label="Programación">
+                            <option value="pweb">Páginas Web</option>
+                            <option value="back">Desarrollo Back</option>
+                            <option value="mobile">Desarrollo Moviles</option>        
                     </optgroup>
-                    <optgroup label="Software">
-                        <option value="li">linux</option>
-                        <option value="win">Windows</option>
-                        <option value="ios">IOs</option>
-                    </optgroup>                    
+                    <optgroup label="Sistemas">
+                        <option value="">Windows</option>
+                        <option value="">Linux</option>                        
+                    </optgroup>
                 </select>
             </div>
+            <div>
+                <legend>Aficiones</legend>
+                <input type="checkbox" name="deporte" id="deporte">
+                <label for="deporte">Deporte</label>
+                <input type="checkbox" name="musica" id="musica">
+                <label for="musica">Musica</label>
+                <input type="checkbox" name="lectura" id="lectura">
+                <label for="lectura">Lectura</label>
+            </div>
+
         </fieldset>
         <fieldset>
             <legend>Comentarios</legend>
-                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-        </fieldset>   
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        </fieldset>
+
+
+   
         <div>
             <button type="submit">Enviar</button>
         </div>

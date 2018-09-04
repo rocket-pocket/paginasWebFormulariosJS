@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function (){
 (() =>{
     document.addEventListener('DOMContentLoaded', () => 
     console.log('iniciando js con función flecha'))
-})()
-*/
+})()*/
 
 
 /*forma anueva de escribir con ECM6
