@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rocket-pocket/paginasWebFormulariosJS/issues"
   },
-  "homepage": "https://github.com/rocket-pocket/paginasWebFormulariosJS#readme"
+  "homepage": "https://github.com/rocket-pocket/paginasWebFormulariosJS#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
 }
