@@ -45,6 +45,15 @@
                 <input type="radio" name="turno" id="noche" value="03">
                 <label for="noche">Noche</label>
             </div>
+            <div class="option-group">
+                <legend>Selecciona una sede</legend>
+                <input type="radio" name="sede" id="madrid" value="MAD">
+                <label for="madrid">Madrid</label>
+                <input type="radio" name="sede" id="barcelona" value="BCN">
+                <label for="barcelona">Barcelona</label>
+                <input type="radio" name="sede" id="cadiz" value="CAD">
+                <label for="cadiz">Cadiz</label>
+            </div>
             <div class="control-group">
                 <label for="curso">Curso</label>
                 <select name="curso" id="curso">
@@ -61,25 +70,24 @@
             </div>
             <div>
                 <legend>Aficiones</legend>
-                <input type="checkbox" name="deporte" id="deporte" class="aficiones"><!-- le ponemos un class para agrupar todos y poder modificarlos po JS -->
+                <input type="checkbox" name="deporte" id="deporte" class="aficiones">
                 <label for="deporte">Deporte</label>
                 <input type="checkbox" name="musica" id="musica" class="aficiones">
                 <label for="musica">Musica</label>
                 <input type="checkbox" name="lectura" id="lectura" class="aficiones">
                 <label for="lectura">Lectura</label>
+                <input type="checkbox" name="viajes" id="viajes" class="aficiones">
+                <label for="viajes">Viajes</label>
             </div>
+
         </fieldset>
         <fieldset>
             <legend>Comentarios</legend>
             <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
         </fieldset>
-
-
-   
         <div>
             <button type="submit">Enviar</button>
         </div>
     </form>
-    <progress value="50" max="100"></progress>
 </body>
 </html>

@@ -11,6 +11,7 @@ export class FormularioModel {
         this.email = ''
         this.passw = ''
         this.coments = '',
+        this.sede = '',
         this.aficiones = [] 
 
     /* this = {
