@@ -79,7 +79,7 @@ class App {
 
     enviar(oEv) {
         oEv.preventDefault()
-        const data = '?genero=' + 
+        const data = '?genero=' +
         this.dom.slGenero[this.dom.slGenero.selectedIndex].value
         + '&autor=' +
         this.dom.slAutores[this.dom.slAutores.selectedIndex].value
