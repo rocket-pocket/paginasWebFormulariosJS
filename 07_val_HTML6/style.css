@@ -1,0 +1,26 @@
+:root{
+    --color-required: green;
+}
+
+form small.text-muted {
+    position: relative;
+    top: -5px;
+    left: 20px;
+    background-color: gainsboro;
+    color: brown !important;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+:required{
+    border: 1px solid var(--color-required);
+    
+}
+:required:focus{
+    --color-required: rgba(207, 240, 253, 0.2);
+    background: var(--color-required);
+}
