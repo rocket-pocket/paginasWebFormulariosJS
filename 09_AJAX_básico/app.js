@@ -11,15 +11,16 @@ function main () {
 
     function pedirDatos() {
         console.dir(FILE)
+        /* CUATRO PASSOS PARA LA PETICION AJAX */
 
-        let ajax = new XMLHttpRequest()
+        let ajax = new XMLHttpRequest()/* 1 CREAMOS  EL OBJETO */
         console.dir(ajax)
-        ajax.onreadystatechange = mostrarDatos
+        ajax.onreadystatechange = mostrarDatos/* 2 ESTABLECERMOS UN MANEJADOR DE EVENTOS CAMBIO DE ESTADO */
 
-        ajax.open('GET','datos.json')
-        ajax.send(null)
+        ajax.open('GET','datos.json')/*3 ABRE EL CANAL PARA ENVIAR EL ARCHIVO  */
+        ajax.send(null) /* -> SEND LOS ENVIA */
 
-        function mostrarDatos() {
+        function mostrarDatos() {/* 4 CREAMOS LA FUNCION MANEJADORA */
             console.log(ajax.readyState)
             let oDatos
             let html
