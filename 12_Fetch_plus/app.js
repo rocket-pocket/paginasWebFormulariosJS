@@ -1,5 +1,5 @@
 import { DATOS, JSON } from './config.js'
-import { AjaxService } from './ajax-service.js';
+import { FetchService } from './fetch-service.js'
 
 export class App {
     constructor () {
@@ -23,20 +23,35 @@ export class App {
     }
 
     pedirDatos(oEv) {
+        let serviceFetch
+        let config
         switch (oEv.target.id) {
             case 'btnDatos':
-                new AjaxService('GET', DATOS, 'txt',  
-                    this.mostrarDatos.bind(this))
+                config = { url : DATOS,
+                            method:'GET',
+                            type: 'txt'}
                 break;
             case 'btnJson':
-                new AjaxService('GET', JSON , 'json', 
-                    this.mostrarDatos.bind(this))
-                break;  
-            case 'btnError':  
-                new AjaxService('GET', 'error', '', 
-                    this.mostrarError.bind(this))
-            break;                   
+                config = { url : JSON,
+                            method:'GET',
+                            type: 'json'}
+            case 'btnError': 
+                config = { url : 'error',
+                            method:'GET',
+                            type: ''}            
+                break;                  
         }
+        serviceFetch = new FetchService(config).get().then(
+            (response) => { 
+                console.log(response)
+                this.mostrarDatos(response)
+            },
+            (error) => {
+                console.log(error),
+                this.mostrarError(error) 
+            }
+        )
+
     } 
 
     mostrarDatos(oDatos) {
@@ -54,8 +69,10 @@ export class App {
     }
 
     mostrarError(oDatos) {
-        this.ndError.innerHTML = oDatos.error
+        let error = oDatos.status + ' : ' + oDatos.statusText
+        this.ndError.innerHTML = error
         this.ndOutput.innerHTML = ''
     }
 }
+
 
