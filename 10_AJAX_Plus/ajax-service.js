@@ -1,12 +1,12 @@
 /**
  * Servicio AJAX
  */
-export class AjaxService {
+export class AjaxService {/* este constructor se encarga de el proceso AJAX */
     constructor(metodo, url, type, callBack) {
         this.ajax = new XMLHttpRequest()
         this.oDatos = {}
         this.type = type
-        this.callBack = callBack
+        //this.callBack = callBack
         console.dir(this.ajax)
         this.ajax.onreadystatechange = 
             this.getDatos.bind(this)
