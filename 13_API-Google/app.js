@@ -7,7 +7,7 @@ export class App {
         this.clave = ''
 
         this.buscar =  this.buscar.bind(this)
-        this.nBtnBuscar.addEventListener('click', this.buscar)
+        this.nBtnBuscar.addEventListener('click', this.buscar) 
     }
 
     buscar() {
@@ -29,7 +29,12 @@ export class App {
             item => {
                 return {
                     autores: item.volumeInfo.authors,
-                    titulo: item.volumeInfo.title 
+                    titulo: item.volumeInfo.title, 
+                    icono: item.volumeInfo.imageLinks ?/* para sacar las imagenes  */
+                    item.volumeInfo.imageLinks.thumbnail: ''
+                    /* icono: item.volumeInfo.imageLinks ?
+                        item.volumeInfo.imageLinks.smallThumbnail: '' 
+                        //? ESTO ES UN TERNARIO Y ES COMO UN IF Y SE UTILIZA PARA CONDICIONES SIMPLES*/
                 }
             }
         )
@@ -40,11 +45,13 @@ export class App {
             if(item.autores) {
                 autor = item.autores.join(' | ')
             }
-            html += `<dt>${item.titulo}</dt>`
+            html += `<dt class="none">${item.titulo}</dt>`
             html += `<dd>${autor}</dd>`
+            html += `<img src="${item.icono}" class="imagenLibro">`
         });
         html += '</dl>'
         this.nOutput.innerHTML = html
         this.nClave.value = ''
     }
+    
 }
