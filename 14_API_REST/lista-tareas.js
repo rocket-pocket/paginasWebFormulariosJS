@@ -1,5 +1,4 @@
 import { FetchService } from "./fetch-service.js";
-import { Tarea } from "./tarea.js";
 
 export class ListaTareas {
     constructor() {
@@ -7,7 +6,6 @@ export class ListaTareas {
         this.aTareas = []
         this.nodoListaTareas = document.querySelector('#lista')
         this.getTareas()
-
     }
 
     getTareas() {
@@ -16,16 +14,30 @@ export class ListaTareas {
             .then( data => {
                 this.aTareas = data
                 this.renderLista()
-            }),
-            (error) => {console.dir(error)}
-    }    
+            },
+            error => {console.dir(error)}
+            )
+    }
+    
     renderLista() {
-        this.aTareas.forEach( 
-            item => {
-            this.nodoListaTareas.appendChild(new Tarea(item).renderTarea())
-            }/* new Tarea instancia el objeto Tarea, lo podemos encontrar en el fichero tarea.js */
+        let html = ''
+        this.aTareas.forEach(
+            item => { html += this.renderTarea(item) }
         )
+        this.nodoListaTareas.innerHTML = html
+    }
+
+
+    renderTarea(data) {
+        let htmlView =  `
+            <li>
+            <input type="checkbox" name="isCompleta" id="isCompleta"
+                ${data.isComplete ? 'checked' : '' }>
+            <span class="nombreTarea">${data.name}</span>
+            <span id="btnBorrar" class="borrarTarea">🗑️</span>
+            </li>
+        `
+        return htmlView
     }
 
 }
-/* lista de tareas es el componente inteligente de nuestra app */
