@@ -1,7 +1,9 @@
 {
   "posts": [
     {
-      "author": {"name": "Daniel"},
+      "author": {
+        "name": "Daniel"
+      },
       "id": 2,
       "title": "todos los lunes"
     },
@@ -13,6 +15,10 @@
       "author": "Pepe Perez",
       "editorial": "Boracay",
       "id": 4
+    },
+    {
+      "title": "todos los lunes",
+      "id": 5
     }
   ],
   "comments": [],
@@ -20,7 +26,27 @@
     "name": "typicode"
   },
   "tareas": [
-    {"name": "Calses curso de Páginas", "isComplete": false },
-    {"name": "Reunión de Trabajo", "isComplete": false }
+    {
+      "id": 1,
+      "name": "Clases curso de Páginas",
+      "isComplete": true
+    },
+    {
+      "id": 2,
+      "name": "Reunión de Trabajo",
+      "isComplete": false
+    }
+  ],
+  "nombres": [
+    {
+      "id": 1,
+      "name": "Daniel Verdú",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "name": "Raúl Verdú",
+      "isComplete": false
+    }
   ]
 }

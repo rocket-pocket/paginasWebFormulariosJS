@@ -7,6 +7,7 @@ export class ListaTareas {
         this.aTareas = []
         this.nodoListaTareas = document.querySelector('#lista')
         this.getTareas()
+
     }
 
     getTareas() {
@@ -15,16 +16,16 @@ export class ListaTareas {
             .then( data => {
                 this.aTareas = data
                 this.renderLista()
-            })
-    }
-    
+            }),
+            (error) => {console.dir(error)}
+    }    
     renderLista() {
-        let html = ''
         this.aTareas.forEach( 
-            item => html += 
-            //`<li> ${item.name} </li>`
-            new Tarea(item).renderTarea()
+            item => {
+            this.nodoListaTareas.appendChild(new Tarea(item).renderTarea())
+            }/* new Tarea instancia el objeto Tarea, lo podemos encontrar en el fichero tarea.js */
         )
-        this.nodoListaTareas.innerHTML = html
     }
+
 }
+/* lista de tareas es el componente inteligente de nuestra app */
