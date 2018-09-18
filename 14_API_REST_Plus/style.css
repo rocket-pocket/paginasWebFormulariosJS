@@ -19,7 +19,3 @@ ul.tareas li span.borrarTarea {
     cursor: pointer;
 }
 
-.hecho{
-    text-decoration: line-through;
-}
-

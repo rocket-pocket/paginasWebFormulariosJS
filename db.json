@@ -37,6 +37,18 @@
       "isComplete": false
     }
   ],
+  "tareas2": [
+    {
+      "id": 1,
+      "name": "Clases curso de Páginas",
+      "isComplete": true
+    },
+    {
+      "id": 2,
+      "name": "Reunión de Trabajo",
+      "isComplete": false
+    }
+  ],
   "nombres": [
     {
       "id": 1,
