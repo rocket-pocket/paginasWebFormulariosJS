@@ -2,10 +2,10 @@
  * Servicio AJAX
  */
 export class FetchService {
-    constructor() {//LE PASAMOS LOS PARAMTROS AL conect() PARA NO TENER QUE INSTANCIAR UNA 
-        //Y OTRA VEZ NEW FETCH
+    constructor() {
         this.oDatos = {}
     }
+
     send(url, config) {
         this.url = url
         this.config = config
@@ -29,3 +29,4 @@ export class FetchService {
         )        
     }
 }
+
