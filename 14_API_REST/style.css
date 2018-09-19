@@ -1,6 +1,6 @@
 body {
     margin: 2rem 3rem;
-    background-color: bisque;
+    background-color: bisque
 }
 
 ul.tareas {
@@ -12,14 +12,16 @@ ul.tareas li {
      justify-content: space-between;
      margin-top: 1rem;
      margin-bottom: 1rem;
-     background: white;
 }
 
-ul.tareas li span.borrarTarea {
+ul.tareas li span.borrar-tarea {
     cursor: pointer;
 }
 
-.hecho{
+.hecho {
     text-decoration: line-through;
 }
 
+.inactivo {
+    opacity: 0.5;
+}

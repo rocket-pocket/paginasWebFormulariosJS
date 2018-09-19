@@ -25,7 +25,33 @@
   "profile": {
     "name": "typicode"
   },
-  "tareas": [],
+  "tareas": [
+    {
+      "id": 1,
+      "name": "Clases curso de Páginas",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "name": "Reunión de Trabajo",
+      "isComplete": false
+    },
+    {
+      "name": "ver a mi sobrino",
+      "isComplete": false,
+      "id": 3
+    },
+    {
+      "name": "dfdfdfdfdf",
+      "isComplete": false,
+      "id": 4
+    },
+    {
+      "name": "do0rmir",
+      "isComplete": false,
+      "id": 5
+    }
+  ],
   "tareas2": [
     {
       "id": 1,
@@ -36,6 +62,16 @@
       "id": 2,
       "name": "Reunión de Trabajo",
       "isComplete": false
+    },
+    {
+      "name": "hola",
+      "isComplete": false,
+      "id": 3
+    },
+    {
+      "name": "veniros",
+      "isComplete": false,
+      "id": 4
     }
   ],
   "nombres": [
