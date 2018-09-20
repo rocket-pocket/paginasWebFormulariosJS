@@ -27,29 +27,19 @@
   },
   "tareas": [
     {
-      "id": 1,
-      "name": "Clases curso de Páginas",
-      "isComplete": false
-    },
-    {
-      "id": 2,
-      "name": "Reunión de Trabajo",
-      "isComplete": false
-    },
-    {
-      "name": "ver a mi sobrino",
-      "isComplete": false,
-      "id": 3
-    },
-    {
-      "name": "dfdfdfdfdf",
-      "isComplete": false,
-      "id": 4
-    },
-    {
       "name": "do0rmir",
       "isComplete": false,
       "id": 5
+    },
+    {
+      "name": "hola",
+      "isComplete": false,
+      "id": 6
+    },
+    {
+      "name": "hola caracola",
+      "isComplete": false,
+      "id": 7
     }
   ],
   "tareas2": [
