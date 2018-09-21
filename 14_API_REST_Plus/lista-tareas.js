@@ -12,7 +12,6 @@ export class ListaTareas {
         document.addEventListener('ckeckCompleta', this.checkTarea.bind(this))
         this.getTareas()
     }
-
     getTareas() {
         this.fetchService.send(this.uRL, {method: 'GET' })
             .then( data => {
