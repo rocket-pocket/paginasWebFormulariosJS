@@ -1,5 +1,4 @@
-import { ITEMS } from "../page/config.js";
-
+import {BASE, ITEMS} from '../page/config.js'
 export class MenuComponent {
   
     /* constructor (baseURL, aItems) {
@@ -18,7 +17,7 @@ export class MenuComponent {
         const menu = document.createElement('nav')
         let itemsList = ""
         this.items.forEach(item => {
-            itemsList += `<li><a href="${BASE +'/'+item[1]}">${item[0]}</a></li>`
+            itemsList += `<li><a href="${BASE+'/'+item[1]}">${item[0]}</a></li>`
         });
         menu.innerHTML = `<ul class="menu">${itemsList}</ul>`
         return menu
