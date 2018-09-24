@@ -27,24 +27,29 @@
   },
   "tareas": [
     {
-      "id": 1,
-      "name": "Clases curso de Páginas",
-      "isComplete": true
-    },
-    {
       "name": "do0rmir",
-      "isComplete": false,
+      "isComplete": true,
       "id": 5
     },
     {
       "name": "hola",
-      "isComplete": false,
+      "isComplete": true,
       "id": 6
     },
     {
-      "name": "pokemon",
-      "isComplete": true,
+      "name": "ver a mi sobrino",
+      "isComplete": false,
       "id": 7
+    },
+    {
+      "name": "Aprender Angular",
+      "isComplete": false,
+      "id": 8
+    },
+    {
+      "name": "Aprender Angular",
+      "isComplete": false,
+      "id": 9
     }
   ],
   "tareas2": [

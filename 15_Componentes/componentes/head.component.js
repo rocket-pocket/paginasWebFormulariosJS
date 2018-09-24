@@ -1,10 +1,9 @@
-import { BASE } from "../page/config.js";
+import { BASE } from "../config.js";
 
 export class HeadComponent {
     constructor(title) {
         this.title = title
         this.cssFile = `${BASE}/css/style.css`
-        
     }
 
     render() {

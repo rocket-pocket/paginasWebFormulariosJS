@@ -30,15 +30,15 @@ export class Tarea {
     }
 
     sendBorrar () {
-        console.log("Emitido Evento borrar")
-        this.nodoTarea.dispatchEvent(new Event('borrarTarea', {
-            'bubbles': true}))
+        this.nodoTarea.dispatchEvent(new  Event('borrarTarea', {
+            'bubbles': true}))/* es fundamental por que si no no funciona y no burbujea el evento */
     }
 
     sendChecked () {
-        console.log("Emitido Evento ckeckCompleta")
-        this.nodoTarea.dispatchEvent(new Event('ckeckCompleta', {
-            'bubbles': true
+        this.nodoTarea.dispatchEvent(new CustomEvent('ckeckCompleta', {
+            'bubbles': true,
+           detail:{key: 23} /* CustomEvent existen además de los eventos normales, es un objeto
+                             que puede tener las propiedades que quieras */
         })) 
     }
 

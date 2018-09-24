@@ -1,6 +1,8 @@
 export const BASE = '/15_Componentes'
 export const APPTITLE = "Componentes"
-export const ITEMS = [
+export const APPMENU = {
+  "name": "MainMenu",
+  "links": [
     [
       "Home",
       "index.html"
@@ -18,3 +20,10 @@ export const ITEMS = [
       "pages/about.html"
     ]
   ]
+}
+
+export const MENSAJES = {
+  listaTareas : {
+      confirmacion : "¿Esta usted segur@?"
+  }
+}
