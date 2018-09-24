@@ -40,12 +40,13 @@ li a{
     font-size: 2rem;
     text-decoration: none;
 }
-section{
+.holam{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
-section img{
+.holam img{
     width: 50%;
 }
 footer{
