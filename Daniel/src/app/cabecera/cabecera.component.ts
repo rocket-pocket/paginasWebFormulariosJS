@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent implements OnInit {
+  titulo: string
+  fw: any
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() { 
   }
+    
+  ngOnInit() {
+    this.fw = 'Angular'
+    this.titulo = `Proyecto ${this.fw}`
+  }
+  saludar(){
+    console.log('hola')
+  }
+  
 
 }
+
+let x = new CabeceraComponent()
+x.saludar()
