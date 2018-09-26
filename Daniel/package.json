@@ -1,14 +1,14 @@
 {
-  "name": "angular",
+  "name": "daniel",
   "version": "0.0.0",
   "scripts": {
+    "ts": "ts-node",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "noTocar": "ng eject"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
