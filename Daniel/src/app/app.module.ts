@@ -17,9 +17,10 @@ import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
 import { ListaTareasComponent } from './lista-tareas/lista-tareas.component';
 import { TareasSimpleComponent } from './tareas-simple/tareas-simple.component';
 
+
 @NgModule({/* esto es un módulo */
   declarations: [/* el componente principal */
-    AppComponent, CabeceraComponent, PieComponent, LogoComponent, MenuComponent, HomeComponent, AboutComponent, ContactsComponent, SaludoComponent, MainComponent, SaludoLocalComponent, ListaTareasComponent, TareasSimpleComponent
+    AppComponent, CabeceraComponent, PieComponent, LogoComponent, MenuComponent, HomeComponent, AboutComponent, ContactsComponent, SaludoComponent, MainComponent, SaludoLocalComponent, ListaTareasComponent, TareasSimpleComponent, 
   ],
   imports: [
     BrowserModule, /* lo que vamos a ipmportar   */
