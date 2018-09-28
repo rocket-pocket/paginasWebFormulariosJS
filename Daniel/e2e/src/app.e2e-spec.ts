@@ -1,14 +1,18 @@
-import { AppPage } from './app.po';
+import { HomePage } from './home.po';
 
 describe('workspace-project App', () => {
-  let page: AppPage;
+  let homePage: HomePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    homePage = new HomePage();
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to Daniel!');
+  it('should display "Angular" in h1', () => {
+    homePage.navigateTo();
+    expect(homePage.getTitleText()).toContain('Angular');
+  });
+  it('should display "CAS" in footer', () => {
+    homePage.navigateTo();
+    expect(homePage.getFooterText()).toContain('CAS');
   });
 });
