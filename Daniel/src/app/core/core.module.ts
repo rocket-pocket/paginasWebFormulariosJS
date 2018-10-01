@@ -7,11 +7,12 @@ import { MenuComponent } from './menu/menu.component';
 import { MainComponent } from './main/main.component';
 import { AppRoutingModule } from '../app-routing.module';
 
-
 @NgModule({
   imports: [
     CommonModule,
-    AppRoutingModule
+   
+    AppRoutingModule,
+    
   ],
   declarations: [
      CabeceraComponent,
