@@ -6,34 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tareas-simple.component.css']
 })
 export class TareasSimpleComponent implements OnInit {
-  aTareas: Array<string>;
-  sTareas: string;
-  constructor() { 
-    
-  }
+
+  aTareas : Array<string>
+  sTarea : string;
+
+  constructor() { }
 
   ngOnInit() {
     this.aTareas = []
     let savedTareas = JSON.parse(localStorage.getItem('tareas'))
-    if(savedTareas){
-      this.aTareas = savedTareas;
-    }
-    
+    if (savedTareas) {
+      this.aTareas = savedTareas
+    } 
   }
 
-  addTareas(){
+  addTarea() {
     let stringTareas: string
-    if(this.sTareas){
-      this.aTareas.push(this.sTareas)
+    if (this.sTarea) {
+      this.aTareas.push(this.sTarea)
       stringTareas = JSON.stringify(this.aTareas)
-      localStorage.setItem('tareas', stringTareas )
-      this.sTareas = ''
+      localStorage.setItem('tareas', stringTareas)
+      this.sTarea = ''
     }
     console.dir(this.aTareas)
-    
   }
-  
- 
-  
 
 }

@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
+import { TareaModel } from '../../models/tarea.model';
 
 @Component({
-  selector: 'cas-tareasplus',
-  templateUrl: './tareasplus.component.html',
-  styleUrls: ['./tareasplus.component.css']
+  selector: 'cas-tareas-plus',
+  templateUrl: './tareas-plus.component.html',
+  styleUrls: ['./tareas-plus.component.css']
 })
-export class TareasplusComponent implements OnInit {
+export class TareasPlusComponent implements OnInit {
 
-  constructor() { }
+  titulo: string
+  rutaGoogle: string
+  newTarea: TareaModel 
 
-  ngOnInit() {
+  constructor() {  
   }
 
+  ngOnInit() {
+    this.titulo = 'Lista plusssss'
+    this.rutaGoogle = 'https://www.google.es'
+    this.newTarea = new TareaModel('', false )
+  }
+
+  addTarea () {
+   
+    console.log(this.newTarea)
+  }
+
+  
 }
