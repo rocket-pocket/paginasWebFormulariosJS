@@ -1,3 +1,42 @@
 ul {
     list-style: none;
 }
+.circle {
+    scroll-behavior: smooth;
+    margin: 2rem 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 10px solid rgba(196, 196, 196, 0.8);
+    border-top-color: rgb(0, 0, 0);
+    animation: spin 2s infinite linear;
+  }
+  @keyframes spin { 
+      25%{
+        border-top-color: rgb(0, 0, 0); 
+      }
+      50%{
+        border-top-color: rgb(0, 0, 0) ;
+        border-right-color: rgb(0, 0, 0); 
+      }
+      75%{
+        border-top-color: rgb(0, 0, 0);
+        border-right-color: rgb(0, 0, 0); 
+        border-bottom-color: rgb(0, 0, 0); 
+      }
+      80%{
+        
+      transform: rotate(360deg);  
+      }
+    100% { 
+        transform: rotate(360deg);
+        
+        border-right-color: rgb(0, 0, 0); 
+        border-bottom-color: rgb(0, 0, 0); 
+      border-left-color: rgb(0, 0, 0); 
+      
+      
+    } 
+  } 

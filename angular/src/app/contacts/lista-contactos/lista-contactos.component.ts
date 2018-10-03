@@ -16,5 +16,13 @@ export class ListaContactosComponent implements OnInit {
   ngOnInit() {
     this.aContactos = USERS
   }
+  borrarContacto(badEmail){
+    console.log('evento recibido')
+    console.dir(badEmail)
+    this.aContactos = this.aContactos.filter(
+      (item) => item.email != badEmail )
+  }
+
+  }
 
 }
