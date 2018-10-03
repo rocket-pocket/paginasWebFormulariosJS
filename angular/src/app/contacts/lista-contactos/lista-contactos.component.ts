@@ -23,6 +23,6 @@ export class ListaContactosComponent implements OnInit {
       (item) => item.email != badEmail )
   }
 
-  }
+  
 
 }
