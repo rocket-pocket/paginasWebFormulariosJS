@@ -1,0 +1,15 @@
+
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">{{fullname | titlecase}} 
+    </h4>
+  </div>
+  <div class="card-body text-center">
+    <img [src]="contacto.picture.medium" [alt]="fullname">
+  </div>
+  <div class="card-footer text-muted">
+     <p class="card-text">{{contacto.email}}</p>
+     <p class="card-text">Nacionalidad: {{contacto.nat}}</p>
+     <p class="card-text">Cumpleaños: {{contacto.dob.date | date : 'fullDate'}}</p>
+  </div>
+</div>
