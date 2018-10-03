@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TareaModel } from '../../models/tarea.model';
+import {TareaModel, TareaIf } from '../../models/tarea.model';
 
 @Component({
   selector: 'cas-tareas-plus',
@@ -10,20 +10,32 @@ export class TareasPlusComponent implements OnInit {
 
   titulo: string
   rutaGoogle: string
-  newTarea: TareaModel 
+  //newTarea: TareaModel 
+  newTarea: TareaIf // POJO
+  aTareas: Array<TareaIf>
 
   constructor() {  
   }
 
   ngOnInit() {
-    this.titulo = 'Lista plusssss'
+    this.titulo = 'Lista plus'
     this.rutaGoogle = 'https://www.google.es'
-    this.newTarea = new TareaModel('', false )
+    // this.newTarea = new TareaModel('', false )
+    this.newTarea = {nombre: '', isCompleted: false}
+    this.aTareas = []
+  }
+  
+  addTarea () {
+    if(!this.newTarea.nombre) {return}
+    // let tareaClon = JSON.parse( JSON.stringify(this.newTarea)) 
+    let tareaClon = Object.assign({}, this.newTarea)
+    this.aTareas.push(tareaClon)
+    console.log(this.aTareas)
+    this.newTarea.nombre = ''
   }
 
-  addTarea () {
-   
-    console.log(this.newTarea)
+  borrarTarea(i) {
+    this.aTareas.splice(i,1)
   }
 
   
