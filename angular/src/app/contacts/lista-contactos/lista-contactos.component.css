@@ -14,29 +14,17 @@ ul {
     animation: spin 2s infinite linear;
   }
   @keyframes spin { 
-      25%{
+      0%{
         border-top-color: rgb(0, 0, 0); 
+        border-right-color: rgb(0, 0, 0);
+        border-bottom-color: rgb(0, 0, 0);
+
       }
-      50%{
+      100%{
         border-top-color: rgb(0, 0, 0) ;
         border-right-color: rgb(0, 0, 0); 
+        border-bottom-color: rgb(0, 0, 0);
+        transform: rotate(360deg)
       }
-      75%{
-        border-top-color: rgb(0, 0, 0);
-        border-right-color: rgb(0, 0, 0); 
-        border-bottom-color: rgb(0, 0, 0); 
-      }
-      80%{
-        
-      transform: rotate(360deg);  
-      }
-    100% { 
-        transform: rotate(360deg);
-        
-        border-right-color: rgb(0, 0, 0); 
-        border-bottom-color: rgb(0, 0, 0); 
-      border-left-color: rgb(0, 0, 0); 
-      
-      
-    } 
+    
   } 

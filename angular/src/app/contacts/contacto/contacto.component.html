@@ -1,4 +1,3 @@
-
 <div class="card">
   <div class="card-header">
     <h4 class="card-title">{{fullname | titlecase}} 
@@ -6,8 +5,7 @@
   </div>
   <div class="card-body text-center">
     <img [src]="contacto.picture.medium" [alt]="fullname">
-    <span> - </span>
-    <button type="button" (click)="sendBorrar()" class="btn btn-warning">Borrar</button>
+    <button type="button" (click)="sendBorrar()" class="btn btn-warning offset-1">Borrar</button>
   </div>
   <div class="card-footer text-muted">
      <p class="card-text">{{contacto.email}}</p>
