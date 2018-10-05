@@ -18,14 +18,20 @@ export class UsuariosService {
 
   }
 
-  getLista(){
+/*   getLista(){
     return new Promise((resolve, reject) => {
     this.http.get(this.url).toPromise()
     .then((response: any) => {
       console.log(response)
       this.aContactos = response.results
       resolve(this.aContactos)
-    })
+    }, (error) => {console.log(error)})
   })
-} 
+} */ 
+//es una manera mas facil de ECMA 2017 (no hay problema para utullizarla en angular por que 
+//webpack lo compila a ecma 5)
+async getListaAA(): Promise<Array<ContactoIf>>{
+  let response:any = await this.http.get(this.url).toPromise()
+  return response.results
+}
 }
