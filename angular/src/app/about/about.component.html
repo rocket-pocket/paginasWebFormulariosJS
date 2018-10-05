@@ -1,4 +1,17 @@
 <p>
-  about works!
+  about works! {{(!empresa) ? ' en mi empresa' : empresa}}
+  
+</p>
+<p>
+  Empresa cliente: {{cliente?.nombre}}
+</p>
+<p>
   <mat-checkbox>Me gusta material</mat-checkbox>
 </p>
+<cas-articulo class="container" [titulo]="'Angular Avanzado'" [autor]="'Pepe Perez'">
+    <div class="col-6">
+      <p>hola caarcola</p>
+      <img src="../../assets/logo.svg" alt="">
+    </div>
+</cas-articulo>
+<cas-articulo [titulo]="'Angular Fundamentos'" [autor]="'Daniel Verdú'"></cas-articulo>
