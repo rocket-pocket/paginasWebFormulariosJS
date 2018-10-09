@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 20000px;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: black;
+}
+header::before{
+    content: '';
+    position: absolute;
+
+}
+/* .fixed-div{
+    width: 92vw;
+    height: 92vh;
+    position: absolute;
+    top: 4vh;
+    left: 4vw;
+    border: 1px solid rgb(88, 88, 88);
+} */
+.header-fixed{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid rgb(88, 88, 88);
+    position: fixed;
+    top: 2.5vh;
+    left: 2.5vw;
+    padding: 1rem;
+}
+.header-fixed::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95vw;
+    height: 95vh;
+    border-top: 1px solid rgb(88, 88, 88);
+    border-left: 1px solid rgb(88, 88, 88);
+}
+.bars-top{
+    width: 100%;
+    height: 1px;
+    background: rgb(88, 88, 88);
+    position: absolute;
+    top: 10%;
+}
+.bars-midle{
+    width: 100%;
+    height: 1px;
+    background: rgb(88, 88, 88);
+    position: absolute;
+    top: 40%;
+}
+.bars-bottom{
+    width: 100%;
+    height: 1px;
+    background: rgb(88, 88, 88);
+    position: absolute;
+    top: 70%;
+}
+.logo{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid rgb(88, 88, 88);
+    position: fixed;
+    top: 2.5vh;
+    right: 2.5vw;
+    padding: 1rem;    
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95vw;
+    height: 95vh;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    border-right: 1px solid rgb(88, 88, 88);
+}
