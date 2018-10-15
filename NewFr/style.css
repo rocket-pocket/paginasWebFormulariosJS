@@ -7,78 +7,103 @@ body{
 header{
     width: 100%;
     height: 100vh;
-    position: absolute;
     background: black;
-}
-header::before{
-    content: '';
     position: absolute;
-
 }
-/* .fixed-div{
-    width: 92vw;
-    height: 92vh;
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header-absolute{
+    width: 97%;
+    height: 97%;
+    border: 1px solid rgb(110, 110, 110);
     position: absolute;
-    top: 4vh;
-    left: 4vw;
-    border: 1px solid rgb(88, 88, 88);
-} */
+    top: 1.5%;
+    left: 1.5%;
+}
 .header-fixed{
-    width: 3rem;
-    height: 3rem;
-    border: 1px solid rgb(88, 88, 88);
+    width: 98%;
+    height: 98%;
+    border: 1px solid rgb(110, 110, 110);
     position: fixed;
-    top: 2.5vh;
-    left: 2.5vw;
-    padding: 1rem;
+    top: 1%;
+    left: 1%;
 }
-.header-fixed::before{
+.btn-menu{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgb(110, 110, 110);
+    position: fixed;
+    left: 2%;
+    top: 3%;
+    cursor: pointer;
+     
+}
+.btn-menu::before{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 95vw;
-    height: 95vh;
-    border-top: 1px solid rgb(88, 88, 88);
-    border-left: 1px solid rgb(88, 88, 88);
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgb(110, 110, 110);
+    top: 5%;
+    left: 5%;
+    border-radius: 50%;
 }
-.bars-top{
-    width: 100%;
-    height: 1px;
-    background: rgb(88, 88, 88);
+.btn-menu::after{
+    content: 'Menu';
+    color: rgb(110, 110, 110);
+    text-transform: uppercase;
     position: absolute;
-    top: 10%;
+    top: .5rem;
+    left: 85%;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0;
+    transition: all 0.2s linear;
 }
-.bars-midle{
-    width: 100%;
-    height: 1px;
-    background: rgb(88, 88, 88);
-    position: absolute;
-    top: 40%;
+.btn-menu:hover::after{
+    opacity: 1;
+    left: 125%;
 }
-.bars-bottom{
-    width: 100%;
-    height: 1px;
-    background: rgb(88, 88, 88);
+.header-fixed nav{
+    width: 20%;
+    height: 100%;
+    background: red;
     position: absolute;
-    top: 70%;
+    left: -100%;
 }
 .logo{
-    width: 3rem;
-    height: 3rem;
-    border: 1px solid rgb(88, 88, 88);
+    width: 2rem;
+    height: 2rem;
     position: fixed;
-    top: 2.5vh;
-    right: 2.5vw;
-    padding: 1rem;    
+    top: 3%;
+    right: 2%;
+    border: 1px solid rgb(110, 110, 110);
+    cursor: pointer;
 }
-.logo::before{
+.logo::after{
     content: '';
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgb(110, 110, 110);
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 95vw;
-    height: 95vh;
-    border-bottom: 1px solid rgb(88, 88, 88);
-    border-right: 1px solid rgb(88, 88, 88);
+    left: -.1rem;
+    top: -.1rem; 
+    transform: rotate(45deg);
+    
+}
+.home{
+    color: rgb(110, 110, 110);
+    position: absolute;
+    top: 0.5rem;
+    right: 85%;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.2s linear
+}
+.logo:hover .home{
+    right: 135%;
+    opacity: 1;
 }
