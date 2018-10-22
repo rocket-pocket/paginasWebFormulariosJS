@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  url_api : 'www.empresa.com/api'
+  url_api : '/api',
+  api_users : '/api/users'
 };
