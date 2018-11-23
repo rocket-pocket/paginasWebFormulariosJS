@@ -1,0 +1,19 @@
+.hidden-header{
+    height: 100vh;
+}
+.hidden-1,.hidden-2{
+    display: none;
+}
+.btn-start-hidden{
+    display: none;
+}
+.btn-start{
+    display: initial;
+}
+/*.hidden-header{
+    display: none;
+}
+.header{
+    display: initial;
+    height: 100vh;
+}*/
